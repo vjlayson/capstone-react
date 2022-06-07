@@ -25,7 +25,7 @@ const AddProduct = () => {
         }
         axios.post("/addproduct",data).then((res)=>{
             if(res.data.Status===200){
-                swal("New product added",res.data.message,"success")
+                swal("New book added",res.data.message,"success")
                 setProductInput({
                     product_name:"",
                     description:"",
@@ -52,7 +52,7 @@ const AddProduct = () => {
                     <div className='card-body'>
                         <form onSubmit={saveProduct}>
                             <div className='form-group mb-3'>
-                                <label>Book Title</label>
+                                <label>Book Title (w/ Author)</label>
                                 <input type='text' className='form-control' name='product_name' value={productInput.product_name} onChange={handleInput}/>
                                 <label>Genre</label>
                                 <input type='text' className='form-control' name='description' value={productInput.description} onChange={handleInput}/>

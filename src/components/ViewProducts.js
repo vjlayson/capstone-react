@@ -39,7 +39,7 @@ const ViewProducts = () => {
                     <thead>
                         <tr>
                             <th>Book ID</th>
-                            <th>Book Title</th>
+                            <th>Book Title (w/ Author)</th>
                             <th>Genre</th>
                             <th>Price (₱)</th>
                             <th>Contact Number</th>

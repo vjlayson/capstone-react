@@ -26,7 +26,7 @@ const UpdateProduct = () => {
         }
         axios.post(`/updateproduct/${id}`,data).then((res)=>{
             if(res.data.Status===200){
-                swal("Product updated",res.data.message,"success")
+                swal("Details updated",res.data.message,"success")
                 history("/products")
             }
             else{
@@ -47,7 +47,7 @@ const UpdateProduct = () => {
                     <div className='card-body'>
                         <form onSubmit={updateProduct}>
                             <div className='form-group mb-3'>
-                                <label>Book Title</label>
+                                <label>Book Title (w/ Author)</label>
                                 <input type='text' className='form-control' name='product_name' value={productInput.product_name} onChange={handleInput}/>
                                 <label>Genre</label>
                                 <input type='text' className='form-control' name='description' value={productInput.description} onChange={handleInput}/>
