@@ -23,7 +23,7 @@ const ViewProducts = () => {
                 <td>{product.product_name}</td>
                 <td>{product.description}</td>
                 <td>{product.price}</td>
-                <td>{product.stock}</td>
+                <td>{product.contact_number}</td>
                 <td><Link to={`/updateproduct/${product.id}`} className="btn-primary">Update</Link></td>
             </tr>
         )
@@ -38,11 +38,11 @@ const ViewProducts = () => {
                 <table className='table table-bordered table-responsive'>
                     <thead>
                         <tr>
-                            <th>id</th>
-                            <th>product name</th>
-                            <th>product description</th>
-                            <th>product price</th>
-                            <th>product stock</th>
+                            <th>Book ID</th>
+                            <th>Book Title</th>
+                            <th>Genre</th>
+                            <th>Price (₱)</th>
+                            <th>Contact Number</th>
                             <th>Edit</th>
                         </tr>
                     </thead>

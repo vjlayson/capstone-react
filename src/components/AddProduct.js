@@ -9,7 +9,7 @@ const AddProduct = () => {
         product_name:"",
         description:"",
         price:0.00,
-        stock:0,
+        contact_number:0,
     })
     const handleInput = (e) => {
         e.preventDefault()
@@ -21,7 +21,7 @@ const AddProduct = () => {
             product_name:productInput.product_name,
             description:productInput.description,
             price:parseFloat(productInput.price),
-            stock:parseInt(productInput.stock),
+            contact_number:parseInt(productInput.contact_number),
         }
         axios.post("/addproduct",data).then((res)=>{
             if(res.data.Status===200){
@@ -30,7 +30,7 @@ const AddProduct = () => {
                     product_name:"",
                     description:"",
                     price:0.00,
-                    stock:0,
+                    contact_number:0,
                 })
                 history("/products")
             }
@@ -52,14 +52,14 @@ const AddProduct = () => {
                     <div className='card-body'>
                         <form onSubmit={saveProduct}>
                             <div className='form-group mb-3'>
-                                <label>Product Name</label>
+                                <label>Book Title</label>
                                 <input type='text' className='form-control' name='product_name' value={productInput.product_name} onChange={handleInput}/>
-                                <label>Description</label>
+                                <label>Genre</label>
                                 <input type='text' className='form-control' name='description' value={productInput.description} onChange={handleInput}/>
-                                <label>Price</label>
+                                <label>Price (₱)</label>
                                 <input type='text' className='form-control' name='price' value={productInput.price} onChange={handleInput}/>
-                                <label>Stock</label>
-                                <input type='text' className='form-control' name='stock' value={productInput.stock} onChange={handleInput}/>
+                                <label>Contact Number</label>
+                                <input type='text' className='form-control' name='contact_number' value={productInput.contact_number} onChange={handleInput}/>
                             </div>
                             <div className='form-group'>
                                 <button type='submit' className='btn btn-primary'>Submit</button>
