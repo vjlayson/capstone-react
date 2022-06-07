@@ -32,7 +32,7 @@ const ViewProducts = () => {
     <div className='container'>
         <div className='card'>
             <div className='card-header'>
-                <h4>List of Products</h4>
+                <h4>List of Books</h4>
             </div>
             <div className='card-body'>
                 <table className='table table-bordered table-responsive'>
