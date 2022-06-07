@@ -7,11 +7,10 @@ const About = () => {
     <div>
         <div className='content'>
             <h2>About Us</h2>
-            <p>
-                BookShop is an online 
+            <p className='para'>
+                BookShop is an online place where people can post their secondhand book/s for sale or give it to others for free. 
             </p>
         </div>
-        {/* <img src={image2} alt="bookshop"  width="100%" /> */}
     </div>
   )
 }

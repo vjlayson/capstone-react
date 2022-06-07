@@ -47,11 +47,11 @@ const UpdateProduct = () => {
                     <div className='card-body'>
                         <form onSubmit={updateProduct}>
                             <div className='form-group mb-3'>
-                                <label>Product Name</label>
+                                <label>Book Title</label>
                                 <input type='text' className='form-control' name='product_name' value={productInput.product_name} onChange={handleInput}/>
-                                <label>Description</label>
+                                <label>Genre</label>
                                 <input type='text' className='form-control' name='description' value={productInput.description} onChange={handleInput}/>
-                                <label>Price</label>
+                                <label>Price (₱)</label>
                                 <input type='text' className='form-control' name='price' value={productInput.price} onChange={handleInput}/>
                                 <label>Contact Number</label>
                                 <input type='text' className='form-control' name='contact_number' value={productInput.contact_number} onChange={handleInput}/>

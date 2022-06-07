@@ -7,3 +7,11 @@
     background-size: cover;
     height: 100vh;
 }
+
+.para{
+    width: 1200px;
+    font-size: 36px;
+    padding-top: 40px;
+    padding-left: 600px;
+    
+}
