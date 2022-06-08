@@ -10,7 +10,8 @@ import Footer from "./components/Footer"
 import About from "./components/About"
 
 // Para hindi paulit-ulit
-axios.defaults.baseURL = "http://localhost:8000/api"
+// axios.defaults.baseURL = "http://localhost:8000/api"
+axios.defaults.baseURL = "https://walrus-app-mxyuz.ondigitalocean.app/api"
 
 function App() {
   return (

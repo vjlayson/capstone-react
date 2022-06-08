@@ -6,7 +6,7 @@ const ViewProducts = () => {
     const [products,setProducts] = useState([])
     useEffect(
         ()=>{
-            axios.get("https://walrus-app-mxyuz.ondigitalocean.app/api/products").then((res)=>{
+            axios.get("/products").then((res)=>{
                 if(res.status===200){
                     setProducts(res.data.products)
                 }
