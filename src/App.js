@@ -11,7 +11,7 @@ import About from "./components/About"
 
 // Para hindi paulit-ulit
 // axios.defaults.baseURL = "http://localhost:8000/api"
-axios.defaults.baseURL = "https://walrus-app-mxyuz.ondigitalocean.app/api"
+axios.defaults.baseURL = "https://bookshop-laravel.herokuapp.com/api"
 
 function App() {
   return (
