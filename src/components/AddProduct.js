@@ -47,7 +47,7 @@ const AddProduct = () => {
             <div className='col-md-6'>
                 <div className='card'>
                     <div className='card-header'>
-                        <h4>Add Book test1</h4>
+                        <h4>Add Book test2</h4>
                     </div>
                     <div className='card-body'>
                         <form onSubmit={saveProduct}>
